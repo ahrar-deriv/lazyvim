@@ -2,7 +2,8 @@ return {
   {
     lazy = false,
     "catppuccin/nvim",
-    as = "catppuccin",
+    priority = 1000,
+    name = "catppuccin",
     config = function()
       require("catppuccin").setup({
         -- flavour = "all", -- mocha, macchiato, frappe, latte
@@ -44,18 +45,7 @@ return {
           }
         end,
       })
-    end,
-  },
-  {
-    lazy = true,
-    "neanias/everforest-nvim",
-    version = false,
-    priority = 1000, -- make sure to load this before all the other start plugins
-    -- Optional; default configuration will be used if setup isn't called.
-    config = function()
-      require("everforest").setup({
-        -- Your config here
-      })
+      vim.cmd([[colorscheme catppuccin]])
     end,
   },
   {
