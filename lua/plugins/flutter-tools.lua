@@ -19,8 +19,8 @@ return {
               request = "launch",
               flutterSdkPath = "$FLUTTER_SDK",
               type = "dart",
-              program = "lib/main_dev.dart",
-              args = { "--flavor", "dev" },
+              program = "lib/main_development.dart",
+              args = { "--flavor", "development" },
             },
             {
               dartSdkPath = "$DART_SDK",

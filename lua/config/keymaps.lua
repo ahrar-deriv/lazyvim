@@ -5,3 +5,4 @@
 -- local opts = { silent = true }
 -- keymap("n", "<leader>/", "gcc", opts)
 -- keymap("x", "<leader>/", "gc", opts)
+vim.api.nvim_set_keymap("n", "<leader>n", ":ASToggle<CR>", {})
