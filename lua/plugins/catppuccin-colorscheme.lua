@@ -6,9 +6,11 @@ return {
     name = "catppuccin",
     config = function()
       require("catppuccin").setup({
+        flavour = "macchiato",
         -- flavour = "all", -- mocha, macchiato, frappe, latte
+        transparent_background = true,
         color_overrides = {
-          all = {
+          macchiato = {
             base = "#2B2B2B",
             mantle = "#313335",
             crust = "#3D3F41",
@@ -48,10 +50,10 @@ return {
       --      vim.cmd([[colorscheme catppuccin]])
     end,
   },
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "catppuccin",
-  --   },
-  -- },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin-macchiato",
+    },
+  },
 }
