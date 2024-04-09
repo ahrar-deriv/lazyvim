@@ -30,6 +30,15 @@ return {
               type = "dart",
               program = "lib/main.dart",
             },
+            {
+              dartSdkPath = "$DART_SDK",
+              name = "Flutter Web",
+              request = "launch",
+              flutterSdkPath = "$FLUTTER_SDK",
+              type = "dart",
+              toolArgs = { "-d", "chrome" },
+              program = "lib/main.dart",
+            },
           }
         end,
       },
