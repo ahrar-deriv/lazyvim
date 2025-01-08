@@ -24,6 +24,15 @@ return {
             },
             {
               dartSdkPath = "$DART_SDK",
+              name = "DerivGo Dev",
+              request = "launch",
+              flutterSdkPath = "$FLUTTER_SDK",
+              type = "dart",
+              program = "lib/main_dev.dart",
+              args = { "--flavor", "dev" },
+            },
+            {
+              dartSdkPath = "$DART_SDK",
               name = "flutter",
               request = "launch",
               flutterSdkPath = "$FLUTTER_SDK",
@@ -42,7 +51,7 @@ return {
           }
         end,
       },
-
+      fvm = false,
       widget_guides = {
         enabled = true,
       },

@@ -10,6 +10,7 @@ return {
         -- flavour = "all", -- mocha, macchiato, frappe, latte
         transparent_background = true,
         color_overrides = {
+          latte = { base = "#ffffff" },
           macchiato = {
             base = "#2B2B2B",
             mantle = "#313335",
@@ -54,6 +55,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin-macchiato",
+      -- colorscheme = "catppuccin-latte",
     },
   },
 }
